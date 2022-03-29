@@ -1,0 +1,332 @@
+Cog2000 log file Fri Nov 15 12:55:18 2019
+gprim v1.29 Compiled:Feb  1 2010 (GLib DirectDraw v7 DX10.0 Compiled:Feb  1 2010)
+Display:1024x768x32 59.81Hz
+CogInput v1.05 Compiled: May 20 2010
+0	[0]	:	COGENT START
+895	[895]	:	Key	30	DOWN	at	895     
+1065	[170]	:	Key	30	UP	at	1065    
+1215	[150]	:	Key	28	DOWN	at	1215    
+1385	[170]	:	Key	28	UP	at	1385    
+25836	[24451]	:	Key	71	DOWN	at	25836   
+25890	[54]	:	Fixation at trial 1: 25.869000
+26418	[528]	:	Object at trial 1: 26.397000
+29942	[3524]	:	Fixation at trial 1: 29.921000
+30471	[529]	:	Catch Stim at trial 1: 30.450000
+34000	[3529]	:	Catch Q at trial 1: 30.450000
+35037	[1037]	:	Key	28	DOWN	at	35037   
+35980	[943]	:	Respose to catch Q at trial 1: 35.045000
+35981	[1]	:	RT and choice to catch Q at trial 1: 1.066000, 28
+36016	[35]	:	Fixation at trial 2: 35.996000
+36538	[522]	:	Object at trial 2: 36.518000
+40061	[3523]	:	Fixation at trial 2: 40.041000
+40585	[524]	:	Catch Stim at trial 2: 40.565000
+44112	[3527]	:	Catch Q at trial 2: 40.565000
+44807	[695]	:	Key	30	DOWN	at	44807   
+46092	[1285]	:	Respose to catch Q at trial 2: 44.814000
+46093	[1]	:	RT and choice to catch Q at trial 2: 0.722000, 30
+46126	[33]	:	Fixation at trial 3: 46.106000
+46648	[522]	:	Object at trial 3: 46.628000
+50171	[3523]	:	Fixation at trial 3: 50.151000
+50702	[531]	:	Catch Stim at trial 3: 50.682000
+54227	[3525]	:	Catch Q at trial 3: 50.682000
+54898	[671]	:	Key	30	DOWN	at	54898   
+56207	[1309]	:	Respose to catch Q at trial 3: 54.904000
+56208	[1]	:	RT and choice to catch Q at trial 3: 0.697000, 30
+56236	[28]	:	Fixation at trial 4: 56.216000
+56759	[523]	:	Object at trial 4: 56.739000
+60282	[3523]	:	Fixation at trial 4: 60.262000
+60804	[522]	:	Catch Stim at trial 4: 60.784000
+64330	[3526]	:	Catch Q at trial 4: 60.784000
+64909	[579]	:	Key	30	DOWN	at	64909   
+66310	[1401]	:	Respose to catch Q at trial 4: 64.915000
+66311	[1]	:	RT and choice to catch Q at trial 4: 0.605000, 30
+66339	[28]	:	Fixation at trial 5: 66.319000
+66862	[523]	:	Object at trial 5: 66.842000
+70385	[3523]	:	Fixation at trial 5: 70.365000
+70908	[523]	:	Catch Stim at trial 5: 70.888000
+74434	[3526]	:	Catch Q at trial 5: 70.888000
+75359	[925]	:	Key	30	DOWN	at	75359   
+76414	[1055]	:	Respose to catch Q at trial 5: 75.366000
+76415	[1]	:	RT and choice to catch Q at trial 5: 0.952000, 30
+76443	[28]	:	Fixation at trial 6: 76.423000
+76965	[522]	:	Object at trial 6: 76.945000
+80488	[3523]	:	Fixation at trial 6: 80.468000
+81011	[523]	:	Catch Stim at trial 6: 80.991000
+84537	[3526]	:	Catch Q at trial 6: 80.991000
+85080	[543]	:	Key	30	DOWN	at	85080   
+86517	[1437]	:	Respose to catch Q at trial 6: 85.086000
+86518	[1]	:	RT and choice to catch Q at trial 6: 0.569000, 30
+86544	[26]	:	Fixation at trial 7: 86.524000
+87066	[522]	:	Object at trial 7: 87.046000
+90589	[3523]	:	Fixation at trial 7: 90.569000
+91112	[523]	:	Catch Stim at trial 7: 91.092000
+94638	[3526]	:	Catch Q at trial 7: 91.092000
+95685	[1047]	:	Key	28	DOWN	at	95685   
+96618	[933]	:	Respose to catch Q at trial 7: 95.690000
+96618	[0]	:	RT and choice to catch Q at trial 7: 1.072000, 28
+96645	[27]	:	Fixation at trial 8: 96.625000
+97167	[522]	:	Object at trial 8: 97.147000
+100690	[3523]	:	Fixation at trial 8: 100.670000
+101213	[523]	:	Catch Stim at trial 8: 101.193000
+104738	[3525]	:	Catch Q at trial 8: 101.193000
+105661	[923]	:	Key	30	DOWN	at	105661  
+106718	[1057]	:	Respose to catch Q at trial 8: 105.667000
+106719	[1]	:	RT and choice to catch Q at trial 8: 0.949000, 30
+106744	[25]	:	Fixation at trial 9: 106.724000
+107267	[523]	:	Object at trial 9: 107.247000
+110790	[3523]	:	Fixation at trial 9: 110.770000
+111313	[523]	:	Catch Stim at trial 9: 111.293000
+114838	[3525]	:	Catch Q at trial 9: 111.293000
+115522	[684]	:	Key	30	DOWN	at	115522  
+116818	[1296]	:	Respose to catch Q at trial 9: 115.527000
+116819	[1]	:	RT and choice to catch Q at trial 9: 0.709000, 30
+116844	[25]	:	Fixation at trial 10: 116.824000
+117366	[522]	:	Object at trial 10: 117.346000
+120889	[3523]	:	Fixation at trial 10: 120.869000
+121412	[523]	:	Catch Stim at trial 10: 121.392000
+124937	[3525]	:	Catch Q at trial 10: 121.392000
+126082	[1145]	:	Key	28	DOWN	at	126082  
+126917	[835]	:	Respose to catch Q at trial 10: 126.088000
+126918	[1]	:	RT and choice to catch Q at trial 10: 1.171000, 28
+126942	[24]	:	Fixation at trial 11: 126.922000
+127464	[522]	:	Object at trial 11: 127.444000
+130987	[3523]	:	Fixation at trial 11: 130.967000
+131509	[522]	:	Catch Stim at trial 11: 131.489000
+135034	[3525]	:	Catch Q at trial 11: 131.489000
+135793	[759]	:	Key	28	DOWN	at	135793  
+137014	[1221]	:	Respose to catch Q at trial 11: 135.799000
+137015	[1]	:	RT and choice to catch Q at trial 11: 0.785000, 28
+137039	[24]	:	Fixation at trial 12: 137.019000
+137561	[522]	:	Object at trial 12: 137.541000
+141084	[3523]	:	Fixation at trial 12: 141.064000
+141606	[522]	:	Catch Stim at trial 12: 141.586000
+145131	[3525]	:	Catch Q at trial 12: 141.586000
+146128	[997]	:	Key	30	DOWN	at	146128  
+147111	[983]	:	Respose to catch Q at trial 12: 146.134000
+147112	[1]	:	RT and choice to catch Q at trial 12: 1.023000, 30
+147136	[24]	:	Fixation at trial 13: 147.116000
+147659	[523]	:	Object at trial 13: 147.639000
+151182	[3523]	:	Fixation at trial 13: 151.162000
+151704	[522]	:	Catch Stim at trial 13: 151.684000
+155229	[3525]	:	Catch Q at trial 13: 151.684000
+157254	[2025]	:	Respose to catch Q at trial 13: 156.734000
+157255	[1]	:	RT and choice to catch Q at trial 13: 1.525000, 0
+157289	[34]	:	Fixation at trial 14: 157.269000
+157811	[522]	:	Object at trial 14: 157.791000
+161334	[3523]	:	Fixation at trial 14: 161.314000
+161856	[522]	:	Catch Stim at trial 14: 161.836000
+165382	[3526]	:	Catch Q at trial 14: 161.836000
+166259	[877]	:	Key	28	DOWN	at	166259  
+167362	[1103]	:	Respose to catch Q at trial 14: 166.266000
+167363	[1]	:	RT and choice to catch Q at trial 14: 0.904000, 28
+167387	[24]	:	Fixation at trial 15: 167.367000
+167909	[522]	:	Object at trial 15: 167.889000
+171432	[3523]	:	Fixation at trial 15: 171.412000
+171954	[522]	:	Catch Stim at trial 15: 171.934000
+175479	[3525]	:	Catch Q at trial 15: 171.934000
+176240	[761]	:	Key	30	DOWN	at	176240  
+177459	[1219]	:	Respose to catch Q at trial 15: 176.246000
+177460	[1]	:	RT and choice to catch Q at trial 15: 0.787000, 30
+177484	[24]	:	Fixation at trial 16: 177.464000
+178006	[522]	:	Object at trial 16: 177.986000
+181529	[3523]	:	Fixation at trial 16: 181.509000
+182051	[522]	:	Catch Stim at trial 16: 182.031000
+185576	[3525]	:	Catch Q at trial 16: 182.031000
+186521	[945]	:	Key	30	DOWN	at	186521  
+187556	[1035]	:	Respose to catch Q at trial 16: 186.527000
+187557	[1]	:	RT and choice to catch Q at trial 16: 0.971000, 30
+187581	[24]	:	Fixation at trial 17: 187.561000
+188104	[523]	:	Object at trial 17: 188.084000
+191627	[3523]	:	Fixation at trial 17: 191.607000
+192149	[522]	:	Catch Stim at trial 17: 192.129000
+195674	[3525]	:	Catch Q at trial 17: 192.129000
+196646	[972]	:	Key	28	DOWN	at	196646  
+197654	[1008]	:	Respose to catch Q at trial 17: 196.652000
+197655	[1]	:	RT and choice to catch Q at trial 17: 0.998000, 28
+197679	[24]	:	Fixation at trial 18: 197.659000
+198201	[522]	:	Object at trial 18: 198.181000
+201724	[3523]	:	Fixation at trial 18: 201.704000
+202245	[521]	:	Catch Stim at trial 18: 202.225000
+205770	[3525]	:	Catch Q at trial 18: 202.225000
+206882	[1112]	:	Key	30	DOWN	at	206882  
+207750	[868]	:	Respose to catch Q at trial 18: 206.888000
+207750	[0]	:	RT and choice to catch Q at trial 18: 1.138000, 30
+207775	[25]	:	Fixation at trial 19: 207.755000
+208297	[522]	:	Object at trial 19: 208.277000
+211820	[3523]	:	Fixation at trial 19: 211.800000
+212342	[522]	:	Catch Stim at trial 19: 212.322000
+215868	[3526]	:	Catch Q at trial 19: 212.322000
+217127	[1259]	:	Key	28	DOWN	at	217127  
+217848	[721]	:	Respose to catch Q at trial 19: 217.133000
+217848	[0]	:	RT and choice to catch Q at trial 19: 1.285000, 28
+217873	[25]	:	Fixation at trial 20: 217.853000
+218395	[522]	:	Object at trial 20: 218.375000
+221918	[3523]	:	Fixation at trial 20: 221.898000
+222440	[522]	:	Catch Stim at trial 20: 222.420000
+225966	[3526]	:	Catch Q at trial 20: 222.420000
+226813	[847]	:	Key	28	DOWN	at	226813  
+227946	[1133]	:	Respose to catch Q at trial 20: 226.819000
+227946	[0]	:	RT and choice to catch Q at trial 20: 0.873000, 28
+227971	[25]	:	Fixation at trial 21: 227.951000
+228493	[522]	:	Object at trial 21: 228.473000
+232016	[3523]	:	Fixation at trial 21: 231.996000
+232538	[522]	:	Catch Stim at trial 21: 232.518000
+236064	[3526]	:	Catch Q at trial 21: 232.518000
+237153	[1089]	:	Key	28	DOWN	at	237153  
+238044	[891]	:	Respose to catch Q at trial 21: 237.159000
+238044	[0]	:	RT and choice to catch Q at trial 21: 1.115000, 28
+238069	[25]	:	Fixation at trial 22: 238.049000
+238591	[522]	:	Object at trial 22: 238.571000
+242114	[3523]	:	Fixation at trial 22: 242.094000
+242636	[522]	:	Catch Stim at trial 22: 242.616000
+246162	[3526]	:	Catch Q at trial 22: 242.616000
+247219	[1057]	:	Key	28	DOWN	at	247219  
+248142	[923]	:	Respose to catch Q at trial 22: 247.225000
+248142	[0]	:	RT and choice to catch Q at trial 22: 1.083000, 28
+248167	[25]	:	Fixation at trial 23: 248.147000
+248690	[523]	:	Object at trial 23: 248.670000
+252214	[3524]	:	Fixation at trial 23: 252.194000
+252736	[522]	:	Catch Stim at trial 23: 252.716000
+256261	[3525]	:	Catch Q at trial 23: 252.716000
+256785	[524]	:	Key	30	DOWN	at	256785  
+258241	[1456]	:	Respose to catch Q at trial 23: 256.791000
+258241	[0]	:	RT and choice to catch Q at trial 23: 0.550000, 30
+258265	[24]	:	Fixation at trial 24: 258.246000
+258788	[523]	:	Object at trial 24: 258.767000
+262310	[3522]	:	Fixation at trial 24: 262.290000
+262832	[522]	:	Catch Stim at trial 24: 262.812000
+266357	[3525]	:	Catch Q at trial 24: 262.812000
+267010	[653]	:	Key	28	DOWN	at	267010  
+268337	[1327]	:	Respose to catch Q at trial 24: 267.016000
+268337	[0]	:	RT and choice to catch Q at trial 24: 0.679000, 28
+268362	[25]	:	Fixation at trial 25: 268.342000
+268884	[522]	:	Object at trial 25: 268.864000
+272407	[3523]	:	Fixation at trial 25: 272.387000
+272930	[523]	:	Catch Stim at trial 25: 272.910000
+276456	[3526]	:	Catch Q at trial 25: 272.910000
+277266	[810]	:	Key	30	DOWN	at	277266  
+278436	[1170]	:	Respose to catch Q at trial 25: 277.272000
+278436	[0]	:	RT and choice to catch Q at trial 25: 0.836000, 30
+278461	[25]	:	Fixation at trial 26: 278.441000
+278983	[522]	:	Object at trial 26: 278.963000
+282506	[3523]	:	Fixation at trial 26: 282.486000
+283028	[522]	:	Catch Stim at trial 26: 283.008000
+286554	[3526]	:	Catch Q at trial 26: 283.008000
+287941	[1387]	:	Key	28	DOWN	at	287941  
+288534	[593]	:	Respose to catch Q at trial 26: 287.948000
+288534	[0]	:	RT and choice to catch Q at trial 26: 1.414000, 28
+288559	[25]	:	Fixation at trial 27: 288.539000
+289081	[522]	:	Object at trial 27: 289.061000
+292604	[3523]	:	Fixation at trial 27: 292.584000
+293125	[521]	:	Catch Stim at trial 27: 293.105000
+296650	[3525]	:	Catch Q at trial 27: 293.105000
+297422	[772]	:	Key	30	DOWN	at	297422  
+298630	[1208]	:	Respose to catch Q at trial 27: 297.427000
+298630	[0]	:	RT and choice to catch Q at trial 27: 0.797000, 30
+298655	[25]	:	Fixation at trial 28: 298.635000
+299177	[522]	:	Object at trial 28: 299.157000
+302700	[3523]	:	Fixation at trial 28: 302.680000
+303223	[523]	:	Catch Stim at trial 28: 303.203000
+306748	[3525]	:	Catch Q at trial 28: 303.203000
+307908	[1160]	:	Key	28	DOWN	at	307908  
+308728	[820]	:	Respose to catch Q at trial 28: 307.914000
+308728	[0]	:	RT and choice to catch Q at trial 28: 1.186000, 28
+308753	[25]	:	Fixation at trial 29: 308.733000
+309275	[522]	:	Object at trial 29: 309.255000
+312798	[3523]	:	Fixation at trial 29: 312.778000
+313319	[521]	:	Catch Stim at trial 29: 313.299000
+316845	[3526]	:	Catch Q at trial 29: 313.299000
+318869	[2024]	:	Respose to catch Q at trial 29: 318.349000
+318870	[1]	:	RT and choice to catch Q at trial 29: 1.524000, 0
+318897	[27]	:	Fixation at trial 30: 318.877000
+319419	[522]	:	Object at trial 30: 319.399000
+322942	[3523]	:	Fixation at trial 30: 322.922000
+323465	[523]	:	Catch Stim at trial 30: 323.445000
+326991	[3526]	:	Catch Q at trial 30: 323.445000
+327924	[933]	:	Key	28	DOWN	at	327924  
+328971	[1047]	:	Respose to catch Q at trial 30: 327.930000
+328971	[0]	:	RT and choice to catch Q at trial 30: 0.959000, 28
+328996	[25]	:	Fixation at trial 31: 328.976000
+329518	[522]	:	Object at trial 31: 329.498000
+333041	[3523]	:	Fixation at trial 31: 333.021000
+333563	[522]	:	Catch Stim at trial 31: 333.543000
+337089	[3526]	:	Catch Q at trial 31: 333.543000
+337659	[570]	:	Key	30	DOWN	at	337659  
+339069	[1410]	:	Respose to catch Q at trial 31: 337.665000
+339069	[0]	:	RT and choice to catch Q at trial 31: 0.596000, 30
+339094	[25]	:	Fixation at trial 32: 339.074000
+339616	[522]	:	Object at trial 32: 339.596000
+343139	[3523]	:	Fixation at trial 32: 343.119000
+343661	[522]	:	Catch Stim at trial 32: 343.641000
+347187	[3526]	:	Catch Q at trial 32: 343.641000
+347675	[488]	:	Key	30	DOWN	at	347675  
+349167	[1492]	:	Respose to catch Q at trial 32: 347.681000
+349167	[0]	:	RT and choice to catch Q at trial 32: 0.514000, 30
+349192	[25]	:	Fixation at trial 33: 349.172000
+349714	[522]	:	Object at trial 33: 349.694000
+353237	[3523]	:	Fixation at trial 33: 353.217000
+353760	[523]	:	Catch Stim at trial 33: 353.740000
+357286	[3526]	:	Catch Q at trial 33: 353.740000
+357860	[574]	:	Key	30	DOWN	at	357860  
+359266	[1406]	:	Respose to catch Q at trial 33: 357.866000
+359266	[0]	:	RT and choice to catch Q at trial 33: 0.600000, 30
+359291	[25]	:	Fixation at trial 34: 359.271000
+359813	[522]	:	Object at trial 34: 359.793000
+363336	[3523]	:	Fixation at trial 34: 363.316000
+363857	[521]	:	Catch Stim at trial 34: 363.837000
+367383	[3526]	:	Catch Q at trial 34: 363.837000
+368656	[1273]	:	Key	28	DOWN	at	368656  
+369363	[707]	:	Respose to catch Q at trial 34: 368.662000
+369363	[0]	:	RT and choice to catch Q at trial 34: 1.299000, 28
+369388	[25]	:	Fixation at trial 35: 369.368000
+369910	[522]	:	Object at trial 35: 369.890000
+373433	[3523]	:	Fixation at trial 35: 373.413000
+373955	[522]	:	Catch Stim at trial 35: 373.935000
+377480	[3525]	:	Catch Q at trial 35: 373.935000
+378387	[907]	:	Key	28	DOWN	at	378387  
+379460	[1073]	:	Respose to catch Q at trial 35: 378.393000
+379460	[0]	:	RT and choice to catch Q at trial 35: 0.933000, 28
+379485	[25]	:	Fixation at trial 36: 379.465000
+380007	[522]	:	Object at trial 36: 379.987000
+383530	[3523]	:	Fixation at trial 36: 383.510000
+384053	[523]	:	Catch Stim at trial 36: 384.033000
+387578	[3525]	:	Catch Q at trial 36: 384.033000
+388452	[874]	:	Key	28	DOWN	at	388452  
+389558	[1106]	:	Respose to catch Q at trial 36: 388.458000
+389558	[0]	:	RT and choice to catch Q at trial 36: 0.900000, 28
+389583	[25]	:	Fixation at trial 37: 389.563000
+390105	[522]	:	Object at trial 37: 390.085000
+393628	[3523]	:	Fixation at trial 37: 393.608000
+394150	[522]	:	Catch Stim at trial 37: 394.130000
+397675	[3525]	:	Catch Q at trial 37: 394.130000
+398508	[833]	:	Key	28	DOWN	at	398508  
+399655	[1147]	:	Respose to catch Q at trial 37: 398.513000
+399655	[0]	:	RT and choice to catch Q at trial 37: 0.858000, 28
+399679	[24]	:	Fixation at trial 38: 399.659000
+400201	[522]	:	Object at trial 38: 400.181000
+403724	[3523]	:	Fixation at trial 38: 403.704000
+404250	[526]	:	Catch Stim at trial 38: 404.230000
+407775	[3525]	:	Catch Q at trial 38: 404.230000
+408448	[673]	:	Key	30	DOWN	at	408448  
+409755	[1307]	:	Respose to catch Q at trial 38: 408.453000
+409755	[0]	:	RT and choice to catch Q at trial 38: 0.698000, 30
+409779	[24]	:	Fixation at trial 39: 409.759000
+410301	[522]	:	Object at trial 39: 410.281000
+413824	[3523]	:	Fixation at trial 39: 413.804000
+414346	[522]	:	Catch Stim at trial 39: 414.326000
+417870	[3524]	:	Catch Q at trial 39: 414.326000
+418959	[1089]	:	Key	28	DOWN	at	418959  
+419850	[891]	:	Respose to catch Q at trial 39: 418.963000
+419850	[0]	:	RT and choice to catch Q at trial 39: 1.113000, 28
+419874	[24]	:	Fixation at trial 40: 419.854000
+420396	[522]	:	Object at trial 40: 420.376000
+423919	[3523]	:	Fixation at trial 40: 423.899000
+424442	[523]	:	Catch Stim at trial 40: 424.422000
+427967	[3525]	:	Catch Q at trial 40: 424.422000
+428439	[472]	:	Key	30	DOWN	at	428439  
+429947	[1508]	:	Respose to catch Q at trial 40: 428.444000
+429947	[0]	:	RT and choice to catch Q at trial 40: 0.497000, 30
+429972	[25]	:	Fixation at trial 41: 429.952000
+430494	[522]	:	Object at trial 41: 430.474000
+434017	[3523]	:	Fixation at trial 41: 433.997000
+434539	[522]	:	

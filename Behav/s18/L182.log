@@ -1,0 +1,253 @@
+Cog2000 log file Fri Oct 25 12:15:04 2019
+gprim v1.29 Compiled:Feb  1 2010 (GLib DirectDraw v7 DX10.0 Compiled:Feb  1 2010)
+Display:1024x768x32 59.81Hz
+CogInput v1.05 Compiled: May 20 2010
+0	[0]	:	COGENT START
+966	[966]	:	Key	30	DOWN	at	966     
+1191	[225]	:	Key	30	UP	at	1191    
+1461	[270]	:	Key	28	DOWN	at	1461    
+1701	[240]	:	Key	28	UP	at	1701    
+56599	[54898]	:	Key	71	DOWN	at	56599   
+56650	[51]	:	Fixation at trial 1: 56.630000
+57674	[1024]	:	Object at trial 1: 57.653000
+59705	[2031]	:	Fixation at trial 2: 59.685000
+60727	[1022]	:	Object at trial 2: 60.707000
+62753	[2026]	:	Fixation at trial 2: 62.732000
+63782	[1029]	:	Catch Stim at trial 2: 63.761000
+64405	[623]	:	Key	30	DOWN	at	64405   
+66262	[1857]	:	Respose to catch Q at trial 2: 64.412000
+66263	[1]	:	RT and choice to catch Q at trial 2: 0.651000, 30
+66301	[38]	:	Fixation at trial 3: 66.280000
+67322	[1021]	:	Object at trial 3: 67.302000
+69350	[2028]	:	Fixation at trial 4: 69.330000
+70371	[1021]	:	Object at trial 4: 70.351000
+72397	[2026]	:	Fixation at trial 5: 72.377000
+73419	[1022]	:	Object at trial 5: 73.399000
+75446	[2027]	:	Fixation at trial 6: 75.426000
+76468	[1022]	:	Object at trial 6: 76.448000
+78493	[2025]	:	Fixation at trial 7: 78.473000
+79515	[1022]	:	Object at trial 7: 79.495000
+81540	[2025]	:	Fixation at trial 8: 81.520000
+82562	[1022]	:	Object at trial 8: 82.542000
+84587	[2025]	:	Fixation at trial 9: 84.567000
+85608	[1021]	:	Object at trial 9: 85.588000
+87632	[2024]	:	Fixation at trial 10: 87.612000
+88653	[1021]	:	Object at trial 10: 88.633000
+90677	[2024]	:	Fixation at trial 11: 90.657000
+91698	[1021]	:	Object at trial 11: 91.678000
+93722	[2024]	:	Fixation at trial 12: 93.702000
+94743	[1021]	:	Object at trial 12: 94.723000
+96767	[2024]	:	Fixation at trial 12: 96.747000
+97794	[1027]	:	Catch Stim at trial 12: 97.774000
+98623	[829]	:	Key	28	DOWN	at	98623   
+100274	[1651]	:	Respose to catch Q at trial 12: 98.630000
+100275	[1]	:	RT and choice to catch Q at trial 12: 0.856000, 28
+100311	[36]	:	Fixation at trial 13: 100.291000
+101332	[1021]	:	Object at trial 13: 101.312000
+103363	[2031]	:	Fixation at trial 14: 103.343000
+104385	[1022]	:	Object at trial 14: 104.365000
+106412	[2027]	:	Fixation at trial 15: 106.392000
+107433	[1021]	:	Object at trial 15: 107.413000
+109461	[2028]	:	Fixation at trial 16: 109.441000
+110482	[1021]	:	Object at trial 16: 110.462000
+112507	[2025]	:	Fixation at trial 17: 112.487000
+113528	[1021]	:	Object at trial 17: 113.508000
+115553	[2025]	:	Fixation at trial 18: 115.533000
+116574	[1021]	:	Object at trial 18: 116.554000
+118598	[2024]	:	Fixation at trial 18: 118.578000
+119624	[1026]	:	Catch Stim at trial 18: 119.604000
+120415	[791]	:	Key	28	DOWN	at	120415  
+122104	[1689]	:	Respose to catch Q at trial 18: 120.420000
+122105	[1]	:	RT and choice to catch Q at trial 18: 0.816000, 28
+122130	[25]	:	Fixation at trial 19: 122.110000
+123151	[1021]	:	Object at trial 19: 123.131000
+125175	[2024]	:	Fixation at trial 20: 125.155000
+126196	[1021]	:	Object at trial 20: 126.176000
+128219	[2023]	:	Fixation at trial 21: 128.200000
+129240	[1021]	:	Object at trial 21: 129.220000
+131265	[2025]	:	Fixation at trial 22: 131.245000
+132286	[1021]	:	Object at trial 22: 132.266000
+134310	[2024]	:	Fixation at trial 23: 134.290000
+135331	[1021]	:	Object at trial 23: 135.311000
+137355	[2024]	:	Fixation at trial 23: 137.335000
+138380	[1025]	:	Catch Stim at trial 23: 138.360000
+139746	[1366]	:	Key	28	DOWN	at	139746  
+140860	[1114]	:	Respose to catch Q at trial 23: 139.752000
+140861	[1]	:	RT and choice to catch Q at trial 23: 1.392000, 28
+140886	[25]	:	Fixation at trial 24: 140.866000
+141908	[1022]	:	Object at trial 24: 141.888000
+143932	[2024]	:	Fixation at trial 25: 143.912000
+144954	[1022]	:	Object at trial 25: 144.934000
+146978	[2024]	:	Fixation at trial 25: 146.958000
+148003	[1025]	:	Catch Stim at trial 25: 147.983000
+148742	[739]	:	Key	28	DOWN	at	148742  
+150483	[1741]	:	Respose to catch Q at trial 25: 148.748000
+150484	[1]	:	RT and choice to catch Q at trial 25: 0.765000, 28
+150509	[25]	:	Fixation at trial 26: 150.489000
+151531	[1022]	:	Object at trial 26: 151.511000
+153556	[2025]	:	Fixation at trial 27: 153.536000
+154577	[1021]	:	Object at trial 27: 154.557000
+156602	[2025]	:	Fixation at trial 28: 156.582000
+157623	[1021]	:	Object at trial 28: 157.603000
+159647	[2024]	:	Fixation at trial 29: 159.627000
+160668	[1021]	:	Object at trial 29: 160.648000
+162692	[2024]	:	Fixation at trial 29: 162.672000
+163717	[1025]	:	Catch Stim at trial 29: 163.697000
+164328	[611]	:	Key	30	DOWN	at	164328  
+166197	[1869]	:	Respose to catch Q at trial 29: 164.334000
+166198	[1]	:	RT and choice to catch Q at trial 29: 0.637000, 30
+166223	[25]	:	Fixation at trial 30: 166.203000
+167244	[1021]	:	Object at trial 30: 167.224000
+169268	[2024]	:	Fixation at trial 31: 169.248000
+170289	[1021]	:	Object at trial 31: 170.269000
+172313	[2024]	:	Fixation at trial 32: 172.293000
+173334	[1021]	:	Object at trial 32: 173.314000
+175358	[2024]	:	Fixation at trial 32: 175.338000
+176383	[1025]	:	Catch Stim at trial 32: 176.363000
+177408	[1025]	:	Key	30	DOWN	at	177408  
+178863	[1455]	:	Respose to catch Q at trial 32: 177.414000
+178864	[1]	:	RT and choice to catch Q at trial 32: 1.051000, 30
+178888	[24]	:	Fixation at trial 33: 178.868000
+179909	[1021]	:	Object at trial 33: 179.889000
+181933	[2024]	:	Fixation at trial 34: 181.913000
+182954	[1021]	:	Object at trial 34: 182.934000
+184978	[2024]	:	Fixation at trial 35: 184.958000
+185999	[1021]	:	Object at trial 35: 185.979000
+188023	[2024]	:	Fixation at trial 35: 188.003000
+189047	[1024]	:	Catch Stim at trial 35: 189.027000
+189534	[487]	:	Key	30	DOWN	at	189534  
+191527	[1993]	:	Respose to catch Q at trial 35: 189.539000
+191528	[1]	:	RT and choice to catch Q at trial 35: 0.512000, 30
+191552	[24]	:	Fixation at trial 36: 191.532000
+192573	[1021]	:	Object at trial 36: 192.553000
+194597	[2024]	:	Fixation at trial 37: 194.577000
+195618	[1021]	:	Object at trial 37: 195.598000
+197642	[2024]	:	Fixation at trial 37: 197.622000
+198666	[1024]	:	Catch Stim at trial 37: 198.646000
+199246	[580]	:	Key	30	DOWN	at	199246  
+201146	[1900]	:	Respose to catch Q at trial 37: 199.252000
+201146	[0]	:	RT and choice to catch Q at trial 37: 0.606000, 30
+201171	[25]	:	Fixation at trial 38: 201.151000
+202193	[1022]	:	Object at trial 38: 202.173000
+204217	[2024]	:	Fixation at trial 39: 204.197000
+205239	[1022]	:	Object at trial 39: 205.219000
+207263	[2024]	:	Fixation at trial 40: 207.243000
+208285	[1022]	:	Object at trial 40: 208.265000
+210309	[2024]	:	Fixation at trial 41: 210.289000
+211330	[1021]	:	Object at trial 41: 211.310000
+213354	[2024]	:	Fixation at trial 42: 213.334000
+214375	[1021]	:	Object at trial 42: 214.355000
+216399	[2024]	:	Fixation at trial 43: 216.379000
+217420	[1021]	:	Object at trial 43: 217.400000
+219444	[2024]	:	Fixation at trial 44: 219.424000
+220465	[1021]	:	Object at trial 44: 220.445000
+222489	[2024]	:	Fixation at trial 45: 222.469000
+223510	[1021]	:	Object at trial 45: 223.490000
+225534	[2024]	:	Fixation at trial 46: 225.514000
+226555	[1021]	:	Object at trial 46: 226.535000
+228579	[2024]	:	Fixation at trial 47: 228.559000
+229600	[1021]	:	Object at trial 47: 229.580000
+231624	[2024]	:	Fixation at trial 48: 231.604000
+232645	[1021]	:	Object at trial 48: 232.625000
+234669	[2024]	:	Fixation at trial 49: 234.649000
+235690	[1021]	:	Object at trial 49: 235.670000
+237714	[2024]	:	Fixation at trial 50: 237.694000
+238735	[1021]	:	Object at trial 50: 238.715000
+240759	[2024]	:	Fixation at trial 51: 240.739000
+241780	[1021]	:	Object at trial 51: 241.760000
+243804	[2024]	:	Fixation at trial 52: 243.784000
+244825	[1021]	:	Object at trial 52: 244.805000
+246849	[2024]	:	Fixation at trial 53: 246.829000
+247870	[1021]	:	Object at trial 53: 247.850000
+249894	[2024]	:	Fixation at trial 54: 249.874000
+250915	[1021]	:	Object at trial 54: 250.895000
+252939	[2024]	:	Fixation at trial 54: 252.919000
+253963	[1024]	:	Catch Stim at trial 54: 253.943000
+254480	[517]	:	Key	30	DOWN	at	254480  
+256444	[1964]	:	Respose to catch Q at trial 54: 254.486000
+256444	[0]	:	RT and choice to catch Q at trial 54: 0.543000, 30
+256469	[25]	:	Fixation at trial 55: 256.449000
+257490	[1021]	:	Object at trial 55: 257.470000
+259514	[2024]	:	Fixation at trial 56: 259.494000
+260536	[1022]	:	Object at trial 56: 260.516000
+262560	[2024]	:	Fixation at trial 56: 262.540000
+263585	[1025]	:	Catch Stim at trial 56: 263.565000
+264265	[680]	:	Key	28	DOWN	at	264265  
+266065	[1800]	:	Respose to catch Q at trial 56: 264.271000
+266065	[0]	:	RT and choice to catch Q at trial 56: 0.706000, 28
+266090	[25]	:	Fixation at trial 57: 266.070000
+267111	[1021]	:	Object at trial 57: 267.091000
+269135	[2024]	:	Fixation at trial 58: 269.115000
+270156	[1021]	:	Object at trial 58: 270.136000
+272180	[2024]	:	Fixation at trial 59: 272.160000
+273201	[1021]	:	Object at trial 59: 273.181000
+275225	[2024]	:	Fixation at trial 60: 275.205000
+276246	[1021]	:	Object at trial 60: 276.226000
+278271	[2025]	:	Fixation at trial 61: 278.251000
+279292	[1021]	:	Object at trial 61: 279.272000
+281316	[2024]	:	Fixation at trial 61: 281.296000
+282342	[1026]	:	Catch Stim at trial 61: 282.321000
+282876	[534]	:	Key	30	DOWN	at	282876  
+284821	[1945]	:	Respose to catch Q at trial 61: 282.882000
+284821	[0]	:	RT and choice to catch Q at trial 61: 0.561000, 30
+284846	[25]	:	Fixation at trial 62: 284.826000
+285867	[1021]	:	Object at trial 62: 285.847000
+287891	[2024]	:	Fixation at trial 63: 287.871000
+288912	[1021]	:	Object at trial 63: 288.892000
+290936	[2024]	:	Fixation at trial 64: 290.916000
+291957	[1021]	:	Object at trial 64: 291.937000
+293981	[2024]	:	Fixation at trial 65: 293.961000
+295002	[1021]	:	Object at trial 65: 294.982000
+297026	[2024]	:	Fixation at trial 66: 297.006000
+298047	[1021]	:	Object at trial 66: 298.027000
+300071	[2024]	:	Fixation at trial 66: 300.051000
+301096	[1025]	:	Catch Stim at trial 66: 301.076000
+301757	[661]	:	Key	28	DOWN	at	301757  
+303576	[1819]	:	Respose to catch Q at trial 66: 301.762000
+303576	[0]	:	RT and choice to catch Q at trial 66: 0.686000, 28
+303602	[26]	:	Fixation at trial 67: 303.582000
+304623	[1021]	:	Object at trial 67: 304.603000
+306647	[2024]	:	Fixation at trial 68: 306.627000
+307668	[1021]	:	Object at trial 68: 307.648000
+309692	[2024]	:	Fixation at trial 68: 309.672000
+310716	[1024]	:	Catch Stim at trial 68: 310.696000
+311983	[1267]	:	Key	28	DOWN	at	311983  
+313196	[1213]	:	Respose to catch Q at trial 68: 311.989000
+313197	[1]	:	RT and choice to catch Q at trial 68: 1.293000, 28
+313221	[24]	:	Fixation at trial 69: 313.201000
+314242	[1021]	:	Object at trial 69: 314.222000
+316266	[2024]	:	Fixation at trial 70: 316.246000
+317287	[1021]	:	Object at trial 70: 317.267000
+319311	[2024]	:	Fixation at trial 71: 319.291000
+320332	[1021]	:	Object at trial 71: 320.312000
+322356	[2024]	:	Fixation at trial 71: 322.336000
+323380	[1024]	:	Catch Stim at trial 71: 323.360000
+324019	[639]	:	Key	30	DOWN	at	324019  
+325860	[1841]	:	Respose to catch Q at trial 71: 324.025000
+325860	[0]	:	RT and choice to catch Q at trial 71: 0.665000, 30
+325885	[25]	:	Fixation at trial 72: 325.865000
+326906	[1021]	:	Object at trial 72: 326.886000
+328930	[2024]	:	Fixation at trial 73: 328.910000
+329951	[1021]	:	Object at trial 73: 329.931000
+331975	[2024]	:	Fixation at trial 74: 331.955000
+332996	[1021]	:	Object at trial 74: 332.976000
+335024	[2028]	:	Fixation at trial 75: 335.004000
+336045	[1021]	:	Object at trial 75: 336.025000
+338069	[2024]	:	Fixation at trial 76: 338.049000
+339090	[1021]	:	Object at trial 76: 339.070000
+341114	[2024]	:	Fixation at trial 76: 341.094000
+342138	[1024]	:	Catch Stim at trial 76: 342.118000
+342710	[572]	:	Key	30	DOWN	at	342710  
+344618	[1908]	:	Respose to catch Q at trial 76: 342.716000
+344618	[0]	:	RT and choice to catch Q at trial 76: 0.598000, 30
+344643	[25]	:	Fixation at trial 77: 344.623000
+345664	[1021]	:	Object at trial 77: 345.644000
+347689	[2025]	:	Fixation at trial 78: 347.669000
+348711	[1022]	:	Object at trial 78: 348.691000
+350735	[2024]	:	Fixation at trial 79: 350.715000
+351756	[1021]	:	Object at trial 79: 351.736000
+353780	[2024]	:	Fixation at trial 80: 353.760000
+354801	[1021]	:	Object at trial 80: 354.781000
+356825	[2024]	:	Fixation at trial 81: 356.805000
+357846	[1021]	:	Object at trial 81: 357.826000
+359870	[2024]	:	Fixation at trial 82: 359.
