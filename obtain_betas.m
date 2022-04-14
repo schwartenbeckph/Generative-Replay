@@ -127,7 +127,7 @@ function [betas, intercepts, corr_betas, amount_null, n_nonZ_chann, betas_11, ..
         [betas_struct, intercepts_struct, amount_null_struct] = train_classifiers(dataLI,nullDataLI,labStm_struct,L1_use,optimise_null,[],[],false);
     end
 
-    if strcmp(name_file,'Data_plan.mat')
+    if strcmp(name_file,'Data_inference.mat')
         labStm_struct = nan(size(bricks_rel_trial,1),1);
         % obtain 'graph structures'
         labStm_struct(bricks_rel_trial(:,1)==bricks_rel_trial(:,2)) = 1;
@@ -180,7 +180,7 @@ function [betas, intercepts, corr_betas, amount_null, n_nonZ_chann, betas_11, ..
     accur_mean = mean(plabs==labStm');
     fprintf('The mean accuracy of classifiers is %f.\n',accur_mean) 
     
-    if (exist('lab_struct','var') && any(any(~isnan(lab_struct)))) || strcmp(name_file,'Data_plan.mat')
+    if (exist('lab_struct','var') && any(any(~isnan(lab_struct)))) || strcmp(name_file,'Data_inference.mat')
         preds_obt_struct = 1 ./ (1 + exp(-(dataLI*betas_struct + intercepts_struct)));        
         [~,plabs]    = max(preds_obt_struct,[],2);
         accur_mean = mean(plabs==labStm_struct');
@@ -197,7 +197,7 @@ function [betas, intercepts, corr_betas, amount_null, n_nonZ_chann, betas_11, ..
             plot_identifyabilty_PS(preds_obt,labStm',[0 0.2])
         end
         
-        if (exist('lab_struct','var') && any(any(~isnan(lab_struct)))) || strcmp(name_file,'Data_plan.mat')
+        if (exist('lab_struct','var') && any(any(~isnan(lab_struct)))) || strcmp(name_file,'Data_inference.mat')
             if length(unique(labStm_struct))<8
                 plot_identifyabilty_PS(preds_obt_struct,labStm_struct',[0 0.6])
             else

@@ -23,8 +23,8 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
 %         control_oscillation = 'ConTheta';
         control_oscillation = 'ConNo';         
 
-%         do_replayAna = false; % do analysis even though file already exists
-        do_replayAna = true; % do analysis even though file already exists
+        do_replayAna = false; % do analysis even though file already exists
+%         do_replayAna = true; % do analysis even though file already exists
         
         % options important for classifier training
         do_localiser = false; % train classifiers
@@ -70,7 +70,7 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %% SETUP THE MATLAB PATHS and variables
     % this will be your base directory
-    based = '';
+    based = '/Users/Philipp/Dropbox/StimConstrMEG/Results_Scanning/code_MEG_Final';
 
     scan_result_path    = fullfile(based,'data');
     behav_result_path   = fullfile(based,'Behav');
@@ -162,9 +162,9 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
 
                 else
                     
-                    load(fullfile('data',subject{idx_sub},'Class_data.mat'))
+                    load(fullfile('data',subject{idx_sub},fname_betas))
 
-                end                    
+                end                          
 
                 % reduce data to some sensors
                 data = data(idx_chan,:,:);           
@@ -481,5 +481,12 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
                                    true,false,size(Stable_var,1)-1,0.05,true,false,[7 2 8],'Individual Seqs',...
                                    {'Difference','Present - present','Present - absent'},...
                                    [-0.03,0.04]);  
+                               
+    % plot all sig stuff
+    [sig_where] =  mk_clusterStats(cat(3,Abs_stable,DistVar_stable,Var_stable,difference_VarVar_AbsVarVarAbs),...
+                                   cat(3,sig_t_maxClus_AbsStable,sig_t_maxClus_DistVarStab,sig_t_maxClus_VarStab,sig_t_maxClus_VarVar_AbsVarVarAbs),...
+                                   true,false,size(Stable_var,1)-1,0.05,true,false,[5 6 3,7],'Individual Seqs',...
+                                   {'Abssent - stable','Distant Present - stable','Presend - stable','Difference'},...
+                                   [-0.07,0.07]); 
   
 end
