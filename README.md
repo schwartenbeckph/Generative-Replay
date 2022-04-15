@@ -4,4 +4,4 @@ Code to run the main replay analysis from https://www.biorxiv.org/content/10.110
 
 Results can be reproduced based on summary stats in results file 'Replay_InferenceTime.mat' or re-run using individual pre-processed data. Either way, start with the 'Replay_InferenceTime.m' (Figures 6 D-F) and 'Replay_InferenceLag.m' (Figure 6C) script.
 
-Note that currently there's only individual preprocessed data for the first two subjects. Data from the remaining subjects can be downloaded from https://www.dropbox.com/sh/d38ff1qztfug4ph/AABux8-saqBeU5sXrY7Cw1joa?dl=0.
+Note that currently there's only individual preprocessed data for the first two subjects. Data from the remaining subjects will have to be uploaded elsewhere due to space limitations.
