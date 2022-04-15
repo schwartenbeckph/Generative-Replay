@@ -2,7 +2,7 @@
 
 Code to run the main analyses from https://www.biorxiv.org/content/10.1101/2021.06.06.447249v1.
 
-Replay results can be reproduced based on summary stats in results file 'Replay_InferenceTime.mat' or re-run using individual pre-processed data. Either way, start with the 'Replay_InferenceTime.m' (Figures 6 D-F) and 'Replay_InferenceLag.m' (Figure 6C) script.
+Replay results can be reproduced based on summary stats in results file 'Replay_InferenceTime.mat' and 'Replay_InferenceLag.mat' or re-run using individual pre-processed data. Either way, start with the 'Replay_InferenceTime.m' (Figures 6 D-F) and 'Replay_InferenceLag.m' (Figure 6C) script.
 
 MEG RSA can be reproduced using 'RSA_inference.m' (Figure 5).
 
