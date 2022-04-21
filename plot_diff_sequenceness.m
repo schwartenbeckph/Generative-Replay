@@ -342,7 +342,7 @@ function [] = plot_diff_sequenceness(S1,S2,title_plot,n_perm,do_reverse,do_one_s
                 mm = nanmean(data_sess,1);
                 ss = nanstd(data_sess,0,1)./sqrt(size(data_sess,1));
 
-                p(idx_data) = plot(mm,'Color',col{col_idx(idx_data)});
+                p(idx_data) = plot(mm,'Color',col{col_idx(idx_data)},'LineWidth',3);
                 if plot_se
                     fill([1:n_time, fliplr(1:n_time)],[mm+ss, fliplr(mm-ss)], col{col_idx(idx_data)},'EdgeAlpha',0,'FaceAlpha',0.2);
                 end
@@ -361,9 +361,9 @@ function [] = plot_diff_sequenceness(S1,S2,title_plot,n_perm,do_reverse,do_one_s
                     end
                     if do_one_sided
                         if n_data==1
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--k','MarkerSize',6) % one sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--k','MarkerSize',6,'LineWidth',3) % one sided test
                         else
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6) % one sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6,'LineWidth',3) % one sided test
                         end
                         if tell_sig
                             sig_idx = find(mm>=prctile(up_sess(idx_sess,:),perc_bound_up));
@@ -376,11 +376,11 @@ function [] = plot_diff_sequenceness(S1,S2,title_plot,n_perm,do_reverse,do_one_s
                         end
                     else
                         if n_data==1
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--k','MarkerSize',6) % two sided test
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess(idx_sess,:),perc_bound_down),'--k','MarkerSize',6)
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--k','MarkerSize',6,'LineWidth',3) % two sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess(idx_sess,:),perc_bound_down),'--k','MarkerSize',6,'LineWidth',3)
                         else
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6) % two sided test
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess(idx_sess,:),perc_bound_down),'--','Color',col{col_idx(idx_data)},'MarkerSize',6)
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6,'LineWidth',3) % two sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess(idx_sess,:),perc_bound_down),'--','Color',col{col_idx(idx_data)},'MarkerSize',6,'LineWidth',3)
                         end
                         if tell_sig
                             sig_idx = find(mm>=prctile(up_sess(idx_sess,:),perc_bound_up));
@@ -474,7 +474,7 @@ function [] = plot_diff_sequenceness(S1,S2,title_plot,n_perm,do_reverse,do_one_s
                 mm = nanmean(data_sess,1);
                 ss = nanstd(data_sess,0,1)./sqrt(size(data_sess,1));
 
-                p(idx_data) = plot(mm,'Color',col{col_idx(idx_data)});
+                p(idx_data) = plot(mm,'Color',col{col_idx(idx_data)},'LineWidth',3);
                 if plot_se
                     fill([1:n_time, fliplr(1:n_time)],[mm+ss, fliplr(mm-ss)], col{col_idx(idx_data)},'EdgeAlpha',0,'FaceAlpha',0.2);
                 end
@@ -489,9 +489,9 @@ function [] = plot_diff_sequenceness(S1,S2,title_plot,n_perm,do_reverse,do_one_s
                     end
                     if do_one_sided
                         if n_data==1
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--k','MarkerSize',6) % one sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--k','MarkerSize',6,'LineWidth',3) % one sided test
                         else
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6) % one sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6,'LineWidth',3) % one sided test
                         end   
                         if tell_sig
                             sig_idx = find(mm>=prctile(up_sess(idx_sess,:),perc_bound_up));
@@ -504,11 +504,11 @@ function [] = plot_diff_sequenceness(S1,S2,title_plot,n_perm,do_reverse,do_one_s
                         end
                     else
                         if n_data==1
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--k','MarkerSize',6) % one sided test
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess_diff(idx_sess,:),perc_bound_down),'--k','MarkerSize',6)
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--k','MarkerSize',6,'LineWidth',3) % one sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess_diff(idx_sess,:),perc_bound_down),'--k','MarkerSize',6,'LineWidth',3)
                         else
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6) % one sided test
-                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess_diff(idx_sess,:),perc_bound_down),'--','Color',col{col_idx(idx_data)},'MarkerSize',6)
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(up_sess_diff(idx_sess,:),perc_bound_up),'--','Color',col{col_idx(idx_data)},'MarkerSize',6,'LineWidth',3) % one sided test
+                            plot(1:n_time,ones(length(1:n_time),1)*prctile(low_sess_diff(idx_sess,:),perc_bound_down),'--','Color',col{col_idx(idx_data)},'MarkerSize',6,'LineWidth',3)
                         end   
                         if tell_sig
                             sig_idx = find(mm>=prctile(up_sess(idx_sess,:),perc_bound_up));
