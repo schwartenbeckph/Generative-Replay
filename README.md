@@ -6,7 +6,7 @@ Note that here there's only individual preprocessed MEG data for the first two s
 
 Replay results can be reproduced based on summary stats in results file 'Replay_InferenceTime.mat' and 'Replay_InferenceLag.mat' or re-run using individual pre-processed data. Either way, start with the 'Replay_InferenceTime.m' (Figures 6 D-F) and 'Replay_InferenceLag.m' (Figure 6C) script.
 
-Use 'obtain_ClassifierConfusion.m' to reproduce classifier reproducibility (Figure 6A).
+Use 'ObtaindecodingAcc.m' to obtain decoding accuracy, and 'obtain_ClassifierConfusion.m' to reproduce classifier reproducibility (Figure 6A).
 
 MEG RSA can be reproduced using 'RSA_inference.m' (Figure 5). Summary stats 'RSA_inference.mat' can be found in the link above.
 
