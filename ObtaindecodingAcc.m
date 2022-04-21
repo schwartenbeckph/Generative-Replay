@@ -6,7 +6,6 @@ function [L1s, L1_mean, TSs, TS_mean] = ObtaindecodingAcc(decode,plot_decoding)
         decode = 'localiser'; % can also be 'relation' to decode relations
 %         decode = 'relation';
         plot_decoding = true;
-        include_null = true;
     end
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

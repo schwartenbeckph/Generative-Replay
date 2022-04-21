@@ -106,14 +106,6 @@ function [overall_accuracy, overall_accuracy_bestTS, se_accuracy_bestTS, L1_best
             set(gcf,'color','white')
             imagesc(overall_accuracy),colorbar,caxis([0 max(max(overall_accuracy))])
 
-            if strcmp(decode,'EI')
-                title(sprintf('Accuracy decoding individual bricks sess %d',idx_sess))
-            elseif strcmp(decode,'GR')
-                title(sprintf('Accuracy decoding ontopness vs. besideness sess %d',idx_sess))
-            elseif strcmp(decode,'LR')
-                title(sprintf('Accuracy decoding left of vs. ontop of vs. right of vs. below of sess %d',idx_sess))
-            end   
-
             xlabel('Time in 10ms after onset (tested)'),ylabel('Time in 10ms after onset (trained)')  
 
             %%%%% plot all decoding best TS %%%%%
@@ -122,18 +114,11 @@ function [overall_accuracy, overall_accuracy_bestTS, se_accuracy_bestTS, L1_best
             
             overall_accuracy_bestTS = nanmean(accuracy_all(:,:,max_timepoint_Mean),1);
 
-            plot(tss,overall_accuracy_bestTS,'Color',col{7});     
+            plot(tss,overall_accuracy_bestTS,'Color',col{7},'LineWidth',3);     
             
             fill([tss, fliplr(tss)],[overall_accuracy_bestTS+se_accuracy_bestTS, fliplr(overall_accuracy_bestTS-se_accuracy_bestTS)], col{8},'EdgeAlpha',0,'FaceAlpha',0.2);
             
-            line([max_timepoint_Mean-1 max_timepoint_Mean-1], [0 1], 'Color',[.8 .8 .8]); % -1 because we start at 0!
-            if strcmp(decode,'EI')
-                title(sprintf('Accuracy decoding individual bricks sess %d',idx_sess))
-            elseif strcmp(decode,'GR')
-                title(sprintf('Accuracy decoding ontopness vs. besideness sess %d',idx_sess))
-            elseif strcmp(decode,'LR')
-                title(sprintf('Accuracy decoding left of vs. ontop of vs. right of vs. below of sess %d',idx_sess))
-            end   
+            line([max_timepoint_Mean-1 max_timepoint_Mean-1], [0 1], 'Color',[.8 .8 .8],'LineWidth',3); % -1 because we start at 0!  
 
             xlabel('Time in 10ms after onset'),ylabel('Accuracy')
             set(gca, 'XTick', [tss(1):10:tss(end)])
