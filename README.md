@@ -2,7 +2,7 @@ Code to run the main analyses from https://www.biorxiv.org/content/10.1101/2021.
 
 Note that here there's only individual preprocessed MEG data for the first two subjects due to space limitations. Data from all subjects can be found at https://www.dropbox.com/sh/c52di7x1tt2k3jp/AABPov3W6-c9dH0TViBECHj7a?dl=0.
 
-Replay results can be reproduced based on summary stats in results file 'Replay_InferenceTime.mat' and 'Replay_InferenceLag.mat' or re-run using individual pre-processed data. Either way, start with the 'Replay_InferenceTime.m' (Figures 6 D-F) and 'Replay_InferenceLag.m' (Figure 6C) script.
+Replay results can be reproduced based on summary stats in results file 'Replay_InferenceTime.mat' (or 'Replay_InferenceTime_SepIntervals.mat' to reproduce Supplementary Figure 6) and 'Replay_InferenceLag.mat' or re-run using individual pre-processed data. Either way, start with the 'Replay_InferenceTime.m' (Figures 6 D-F) and 'Replay_InferenceLag.m' (Figure 6C) script.
 
 Use 'ObtaindecodingAcc.m' to obtain decoding accuracy, and 'obtain_ClassifierConfusion.m' to reproduce classifier reproducibility (Figure 6A).
 
