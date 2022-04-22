@@ -96,7 +96,11 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
     trial_max = 6*48;
     
     % Filename of pre-analysed sequence data
-    file_name = 'Replay_InferenceTime.mat';
+    if idx_incr == 1
+        file_name = 'Replay_InferenceTime.mat'; % sliding window
+    elseif idx_incr == 50
+        file_name = 'Replay_InferenceTime_SepIntervals.mat'; % separate intervals
+    end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -446,47 +450,47 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
                                   cat(3,h_VarVar,h_VarStab,h_StabVar,h_DistVarStab),[2 3 4 6],{'vary -> vary' 'vary -> stable' 'stable -> vary' 'dist vary -> stable'},...
                                   [-0.05 0.05],[0 8],[])                              
                               
+    else
+        
+        % plot difference
+        [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,10000,[],[100,0],true,0.05,false);
+    %     Note: the above is noisy based on 10000 shuffles, run below to get more reliable estimate
+    %     [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,200000,[],[100,0],true,0.05,false); 
+
+        [sig_where] = mk_clusterStats(distances_seq,sig_t_maxClus,true,false,size(distances_seq,1)-1,0.05,true,false,9,'Seqs vary vs. stable BBs different intervals',[],[-0.05,0.04]);
+
+        % plot individual variables                          
+        [~, ~, ~, sig_t_maxClus_VarVar]      = sign_flip_AcrossTime_PS(Var_var,10000,[],[100,0],true,0.05,false);            
+        [~, ~, ~, sig_t_maxClus_VarStab]     = sign_flip_AcrossTime_PS(Var_stable,10000,[],[100,0],true,0.05,false);   
+        [~, ~, ~, sig_t_maxClus_StableVar]   = sign_flip_AcrossTime_PS(Stable_var,10000,[],[100,0],true,0.05,false); 
+        [~, ~, ~, sig_t_maxClus_AbsStable]   = sign_flip_AcrossTime_PS(Abs_stable,10000,[],[100,0],true,0.05,false);
+        [~, ~, ~, sig_t_maxClus_DistVarStab] = sign_flip_AcrossTime_PS(DistVar_stable,10000,[],[100,0],true,0.05,false);
+
+        [sig_where] =  mk_clusterStats(cat(3,Var_var,Stable_var,Abs_stable,DistVar_stable,Var_stable),...
+                                       cat(3,sig_t_maxClus_VarVar,sig_t_maxClus_StableVar,sig_t_maxClus_AbsStable,sig_t_maxClus_DistVarStab,sig_t_maxClus_VarStab),...
+                                       true,false,size(Stable_var,1)-1,0.05,true,false,[2 4 5 6 3],'Individual Seqs',...
+                                       {'Present - present','Stable - present','Abssent - stable','Distant Present - stable','Presend - stable'},...
+                                       [-0.07,0.07]);                                   
+
+        % plot absent stuff           
+        AbsVarVarAbs = mean(cat(3,Abs_var,Var_abs),3);
+        [~, ~, ~, sig_t_maxClus_AbsVarVarAbs]    = sign_flip_AcrossTime_PS(AbsVarVarAbs,10000,[],[100,0],true,0.05,false);  
+
+        difference_VarVar_AbsVarVarAbs = Var_var - mean(cat(3,Abs_var,Var_abs),3);
+        [~, ~, ~, sig_t_maxClus_VarVar_AbsVarVarAbs]    = sign_flip_AcrossTime_PS(difference_VarVar_AbsVarVarAbs,10000,[],[100,0],true,0.05,false);   
+
+
+        [sig_where] =  mk_clusterStats(cat(3,difference_VarVar_AbsVarVarAbs,Var_var,AbsVarVarAbs),...
+                                       cat(3,sig_t_maxClus_VarVar_AbsVarVarAbs,sig_t_maxClus_VarVar,sig_t_maxClus_AbsVarVarAbs),...
+                                       true,false,size(Stable_var,1)-1,0.05,true,false,[7 2 8],'Individual Seqs',...
+                                       {'Difference','Present - present','Present - absent'},...
+                                       [-0.03,0.04]);  
+
+        % plot all sig stuff
+        [sig_where] =  mk_clusterStats(cat(3,Abs_stable,DistVar_stable,Var_stable,difference_VarVar_AbsVarVarAbs),...
+                                       cat(3,sig_t_maxClus_AbsStable,sig_t_maxClus_DistVarStab,sig_t_maxClus_VarStab,sig_t_maxClus_VarVar_AbsVarVarAbs),...
+                                       true,false,size(Stable_var,1)-1,0.05,true,false,[5 6 3,7],'Individual Seqs',...
+                                       {'Abssent - stable','Distant Present - stable','Presend - stable','Difference'},...
+                                       [-0.07,0.07]); 
     end
-        
-    % plot difference
-    [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,10000,[],[100,0],true,0.05,false);
-%     Note: the above is noisy based on 10000 shuffles, run below to get more reliable estimate
-%     [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,200000,[],[100,0],true,0.05,false); 
-
-    [sig_where] = mk_clusterStats(distances_seq,sig_t_maxClus,true,false,size(distances_seq,1)-1,0.05,true,false,9,'Seqs vary vs. stable BBs different intervals',[],[-0.05,0.04]);
-        
-    % plot individual variables                          
-    [~, ~, ~, sig_t_maxClus_VarVar]      = sign_flip_AcrossTime_PS(Var_var,10000,[],[100,0],true,0.05,false);            
-    [~, ~, ~, sig_t_maxClus_VarStab]     = sign_flip_AcrossTime_PS(Var_stable,10000,[],[100,0],true,0.05,false);   
-    [~, ~, ~, sig_t_maxClus_StableVar]   = sign_flip_AcrossTime_PS(Stable_var,10000,[],[100,0],true,0.05,false); 
-    [~, ~, ~, sig_t_maxClus_AbsStable]   = sign_flip_AcrossTime_PS(Abs_stable,10000,[],[100,0],true,0.05,false);
-    [~, ~, ~, sig_t_maxClus_DistVarStab] = sign_flip_AcrossTime_PS(DistVar_stable,10000,[],[100,0],true,0.05,false);
-
-    [sig_where] =  mk_clusterStats(cat(3,Var_var,Stable_var,Abs_stable,DistVar_stable,Var_stable),...
-                                   cat(3,sig_t_maxClus_VarVar,sig_t_maxClus_StableVar,sig_t_maxClus_AbsStable,sig_t_maxClus_DistVarStab,sig_t_maxClus_VarStab),...
-                                   true,false,size(Stable_var,1)-1,0.05,true,false,[2 4 5 6 3],'Individual Seqs',...
-                                   {'Present - present','Stable - present','Abssent - stable','Distant Present - stable','Presend - stable'},...
-                                   [-0.07,0.07]);                                   
-                                   
-    % plot absent stuff           
-    AbsVarVarAbs = mean(cat(3,Abs_var,Var_abs),3);
-    [~, ~, ~, sig_t_maxClus_AbsVarVarAbs]    = sign_flip_AcrossTime_PS(AbsVarVarAbs,10000,[],[100,0],true,0.05,false);  
-
-    difference_VarVar_AbsVarVarAbs = Var_var - mean(cat(3,Abs_var,Var_abs),3);
-    [~, ~, ~, sig_t_maxClus_VarVar_AbsVarVarAbs]    = sign_flip_AcrossTime_PS(difference_VarVar_AbsVarVarAbs,10000,[],[100,0],true,0.05,false);   
-
-
-    [sig_where] =  mk_clusterStats(cat(3,difference_VarVar_AbsVarVarAbs,Var_var,AbsVarVarAbs),...
-                                   cat(3,sig_t_maxClus_VarVar_AbsVarVarAbs,sig_t_maxClus_VarVar,sig_t_maxClus_AbsVarVarAbs),...
-                                   true,false,size(Stable_var,1)-1,0.05,true,false,[7 2 8],'Individual Seqs',...
-                                   {'Difference','Present - present','Present - absent'},...
-                                   [-0.03,0.04]);  
-                               
-    % plot all sig stuff
-    [sig_where] =  mk_clusterStats(cat(3,Abs_stable,DistVar_stable,Var_stable,difference_VarVar_AbsVarVarAbs),...
-                                   cat(3,sig_t_maxClus_AbsStable,sig_t_maxClus_DistVarStab,sig_t_maxClus_VarStab,sig_t_maxClus_VarVar_AbsVarVarAbs),...
-                                   true,false,size(Stable_var,1)-1,0.05,true,false,[5 6 3,7],'Individual Seqs',...
-                                   {'Abssent - stable','Distant Present - stable','Presend - stable','Difference'},...
-                                   [-0.07,0.07]); 
-  
 end

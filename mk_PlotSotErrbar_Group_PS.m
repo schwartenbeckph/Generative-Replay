@@ -51,9 +51,9 @@ function [] = mk_PlotSotErrbar_Group_PS(input_data,horiz_line,input_ylabel,input
     
     for idx_dat=1:size(input_data,3)
     
-        p(idx_dat) = plot(x_Ticks(idx_dat,:),mean(input_data(:,:,idx_dat)),'.','Color',col{col_idx(idx_dat)},'MarkerSize',10);
+        p(idx_dat) = plot(x_Ticks(idx_dat,:),mean(input_data(:,:,idx_dat)),'.','Color',col{col_idx(idx_dat)},'MarkerSize',20);
 
-        er = errorbar(x_Ticks(idx_dat,:),mean(input_data(:,:,idx_dat)),std(input_data(:,:,idx_dat),0,1)/sqrt(size(input_data(:,:,idx_dat),1)),'Color',col{col_idx(idx_dat)});    
+        er = errorbar(x_Ticks(idx_dat,:),mean(input_data(:,:,idx_dat)),std(input_data(:,:,idx_dat),0,1)/sqrt(size(input_data(:,:,idx_dat),1)),'Color',col{col_idx(idx_dat)},'Linewidth',3);    
         er.LineStyle = 'none';
     
     end
@@ -97,7 +97,7 @@ function [] = mk_PlotSotErrbar_Group_PS(input_data,horiz_line,input_ylabel,input
             x_sig = 1:size(input_data,2);
             x_sig = x_sig(logical(input_h));
             
-            plot(x_sig,y_sig,'*k')
+            plot(x_sig,y_sig,'*k','MarkerSize',10,'Linewidth',2)
 %             plot(x_sig,y_sig,'*','Color',col{col_idx})
         else
             y_sig = ones(1,sum(input_h(:)))*y_lim_ax(2)*.95;
@@ -114,7 +114,7 @@ function [] = mk_PlotSotErrbar_Group_PS(input_data,horiz_line,input_ylabel,input
 %             x_sig = x_sig(logical(input_h(:)));
 
             for idx_sig=1:length(x_sig)
-                plot(x_sig(idx_sig),y_sig(idx_sig),'*','Color',col{col_sig(idx_sig)})
+                plot(x_sig(idx_sig),y_sig(idx_sig),'*','Color',col{col_sig(idx_sig)},'MarkerSize',10,'Linewidth',2)
             end
         end
 
