@@ -23,8 +23,8 @@ function [] = obtain_ClassifierConfusion(include_null,optimise_null,do_normalise
         do_plot = true;
 %         do_plot = false;        
         
-        do_localiser_anyway     = false; % do analysis even though file already exists
-%         do_localiser_anyway     = true; % do analysis even though file already exists        
+        train_classifier     = false; % do analysis even though file already exists
+%         train_classifier     = true; % do analysis even though file already exists        
         
 %         baseline_correct = false;
         baseline_correct = true;
@@ -65,7 +65,7 @@ function [] = obtain_ClassifierConfusion(include_null,optimise_null,do_normalise
     
     fname_betas = 'DataDecode_ALLTS_ClassConf.mat';
 
-    if do_localiser_anyway
+    if train_classifier
 
         %%%%% obtain classifiers %%%%%
         plot_localiser_data = false;
