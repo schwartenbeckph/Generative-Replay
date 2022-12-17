@@ -188,6 +188,12 @@ if mk_RDM
     r4_R                           = r4_nan;
     r4_R(logical(eye(size(r4_R)))) = size_diff_R;    
     
+    
+    % Note that the definition of r4_R (=size_diff_R) assumes that the
+    % algebra hypothesis is correct, i.e. B_1-B_2-B_3 = B_target, so we can
+    % use B_target to define the size overlap with B_reference.
+    % This implies effective control in regions where the silhouette
+    % algebra hypothesis is true
     r4 = [r4_nan r4_A   r4_R;
           r4_A   r4_nan r4_nan;
           r4_R   r4_nan r4_nan];
@@ -232,6 +238,11 @@ if mk_RDM
     r5_R                           = r5_nan;
     r5_R(logical(eye(size(r5_R)))) = pixel_diff_R;    
     
+    % Note that the definition of r5_R (=pixel_diff_R) assumes that the
+    % algebra hypothesis is correct, i.e. B_1-B_2-B_3 = B_target, so we can
+    % use B_target to define the pixel overlap with B_reference.
+    % This implies effective control in regions where the silhouette
+    % algebra hypothesis is true
     r5 = [r5_nan r5_A   r5_R;
           r5_A   r5_nan r5_nan;
           r5_R   r5_nan r5_nan]; 
