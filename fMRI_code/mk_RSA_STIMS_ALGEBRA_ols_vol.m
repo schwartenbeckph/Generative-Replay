@@ -97,6 +97,10 @@ n_cond = (size(algebra_ontop,1)+size(algebra_beside,1))*3; % determine length of
 
 mkdir(distance_folder)
 
+% structure of algebra:
+% algebra(:,1:3) = algebra parts
+% algebra(:,4) = target
+% algebra(:,4) = reference
 algebra = [algebra_ontop; algebra_beside];
 
 %% Make model RDM
