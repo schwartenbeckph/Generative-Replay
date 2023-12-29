@@ -31,8 +31,7 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
         include_null  = true; % include nulldata when training classifiers
         optimise_null = true; % opmitise amount of nulldata - take as much as needed to minimise correlations between classifiers    
         L1_prevBest = 0.006;
-        TS_ELprevBest  = 20;
-%         TS_RELprevBest = 30;   
+        TS_ELprevBest  = 20;  
         baseline_correct = true;        
         Loc_11 = false;
         which_chan = 'all';   
@@ -47,6 +46,7 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
 
     idx_incr = 1; % this reproduces main finding in figure 6
 %     idx_incr = 50; % this reproduces supplementary figure 5
+%     idx_incr = 25; % this reproduces supplementary figure 5
 
     window_size = 100;
 
@@ -70,7 +70,7 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %% SETUP THE MATLAB PATHS and variables
     % this will be your base directory
-    based = '/Users/Philipp/Dropbox/StimConstrMEG/Results_Scanning/code_MEG_Final';
+    based = '';
 
     scan_result_path    = fullfile(based,'data');
     behav_result_path   = fullfile(based,'Behav');
@@ -100,6 +100,8 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
         file_name = 'Replay_InferenceTime.mat'; % sliding window
     elseif idx_incr == 50
         file_name = 'Replay_InferenceTime_SepIntervals.mat'; % separate intervals
+    elseif idx_incr == 25
+        file_name = 'idx_incr25_Replay_InferenceTime_SepIntervals.mat'; % separate intervals
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
@@ -186,7 +188,6 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
                 if do_normalise
                     ERF_subj(idx_sub,:) = mk_normalise(ERF_subj(idx_sub,:));
                 end
-    %             figure,plot(ERF_subj(idx_sub,:))
 
                 for idx_trial = use_trials   
 
@@ -326,25 +327,6 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
                    T_EE_wrong_varyToabsent    = T_EE_wrong_varyTovary; T_EE_wrong_varyToabsent(el_absent,:) = 0; % present -> absent
 
                    T_EE_wrong_absentTostable    = T_EE_wrong; T_EE_wrong_absentTostable(:,BB_vary) = 0; % absent -> stable
-
-                   % plot transition probs
-%                    if mod(idx_trial,20)==0
-%                        figure
-%                        subplot(5,5,1),imagesc(T_ElEl)
-%                        subplot(5,5,2),imagesc(T_ElEl_varyTovary)
-%                        subplot(5,5,3),imagesc(T_ElEl_varyTostable)
-%                        subplot(5,5,4),imagesc(T_ElEl_stableTovary)
-%                        subplot(5,5,5),imagesc(T_ElEl_distantvaryTostable)
-%                    end
-                   % plot absent transition probs
-%                    if mod(idx_trial,20)==0
-%                        figure
-%                        subplot(5,5,1),imagesc(T_EE_wrong)
-%                        subplot(5,5,2),imagesc(T_EE_wrong_absentTovary)
-%                        subplot(5,5,3),imagesc(T_EE_wrong_varyToabsent)
-%                        subplot(5,5,4),imagesc(T_EE_wrong_absentTostable)
-%                        subplot(5,5,5),imagesc(T_EE_wrong_stableToabsent)
-%                    end
                    
                    
                    % if stable building block is in the middle
@@ -448,17 +430,35 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
                                   'Time-Interval','Difference To-Be-Inferred - Always Present Different Time-Intervals',...
                                   {'-500ms - 500ms' '0ms - 1000ms' '500ms - 1500ms' '1000ms - 2000ms' '1500ms - 2500ms' '2000ms - 2500ms' '2500ms - 3500ms'},...
                                   cat(3,h_VarVar,h_VarStab,h_StabVar,h_DistVarStab),[2 3 4 6],{'vary -> vary' 'vary -> stable' 'stable -> vary' 'dist vary -> stable'},...
-                                  [-0.05 0.05],[0 8],[])                              
+                                  [-0.05 0.05],[0 8],[])      
+    elseif size(distances_seq,2) == 13
+        
+        [h_VarVar, ~]  = ttest(Var_var);
+        [h_VarStab, ~] = ttest(Var_stable);
+        [h_StabVar, ~] = ttest(Stable_var);
+        [h_DistVarStab, ~] = ttest(DistVar_stable);
+        
+        Present_data = cat(3,Var_var,Var_stable,Stable_var,DistVar_stable);
+                              
+        mk_PlotSotErrbar_Group_PS(Present_data,true,' ',...
+                                  'Time-Interval','Difference To-Be-Inferred - Always Present Different Time-Intervals',...
+                                  {'-500ms - 500ms' '-250ms - 750ms' '0ms - 1000ms' '250ms - 1250ms' '500ms - 1500ms' '750ms - 1750ms' '1000ms - 2000ms' '1250ms - 2250ms' '1500ms - 2500ms' '1750ms - 2750ms'  '2000ms - 3000ms'  '2250ms - 3250ms'  '2500ms - 3500ms'},...
+                                  cat(3,h_VarVar,h_VarStab,h_StabVar,h_DistVarStab),[2 3 4 6],{'vary -> vary' 'vary -> stable' 'stable -> vary' 'dist vary -> stable'},...
+                                  [-0.05 0.05],[0 14],[]) 
                               
     else
         
         % plot difference
-        [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,10000,[],[100,0],true,0.05,false);
+%         [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,10000,[],[100,0],true,0.05,false);
     %     Note: the above is noisy based on 10000 shuffles, run below to get more reliable estimate
-    %     [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,200000,[],[100,0],true,0.05,false); 
+        [~, ~, ~, sig_t_maxClus] = sign_flip_AcrossTime_PS(distances_seq,200000,[],[100,0],true,0.05,false); 
 
         [sig_where] = mk_clusterStats(distances_seq,sig_t_maxClus,true,false,size(distances_seq,1)-1,0.05,true,false,9,'Seqs vary vs. stable BBs different intervals',[],[-0.05,0.04]);
 
+        time = -50:350;
+        disp(sig_where)
+        time(sig_where{1})
+        
         % plot individual variables                          
         [~, ~, ~, sig_t_maxClus_VarVar]      = sign_flip_AcrossTime_PS(Var_var,10000,[],[100,0],true,0.05,false);            
         [~, ~, ~, sig_t_maxClus_VarStab]     = sign_flip_AcrossTime_PS(Var_stable,10000,[],[100,0],true,0.05,false);   
@@ -468,9 +468,14 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
 
         [sig_where] =  mk_clusterStats(cat(3,Var_var,Stable_var,Abs_stable,DistVar_stable,Var_stable),...
                                        cat(3,sig_t_maxClus_VarVar,sig_t_maxClus_StableVar,sig_t_maxClus_AbsStable,sig_t_maxClus_DistVarStab,sig_t_maxClus_VarStab),...
-                                       true,false,size(Stable_var,1)-1,0.05,true,false,[2 4 5 6 3],'Individual Seqs',...
+                                       true,false,size(Stable_var,1)-1,0.05,true,false,[2 4 5 6 3],'Individual Sequences',...
                                        {'Present - present','Stable - present','Abssent - stable','Distant Present - stable','Presend - stable'},...
-                                       [-0.07,0.07]);                                   
+                                       [-0.07,0.07]);  
+                                   
+        disp(sig_where)
+        time(sig_where{1}{3})
+        time(sig_where{1}{4})
+        time(sig_where{1}{5})
 
         % plot absent stuff           
         AbsVarVarAbs = mean(cat(3,Abs_var,Var_abs),3);
@@ -485,12 +490,33 @@ function [] = Replay_InferenceTime(which_data,do_replayAna,do_localiser,...
                                        true,false,size(Stable_var,1)-1,0.05,true,false,[7 2 8],'Individual Seqs',...
                                        {'Difference','Present - present','Present - absent'},...
                                        [-0.03,0.04]);  
+                                   
+        disp(sig_where)
+        time(sig_where{1}{1})
 
         % plot all sig stuff
         [sig_where] =  mk_clusterStats(cat(3,Abs_stable,DistVar_stable,Var_stable,difference_VarVar_AbsVarVarAbs),...
                                        cat(3,sig_t_maxClus_AbsStable,sig_t_maxClus_DistVarStab,sig_t_maxClus_VarStab,sig_t_maxClus_VarVar_AbsVarVarAbs),...
                                        true,false,size(Stable_var,1)-1,0.05,true,false,[5 6 3,7],'Individual Seqs',...
-                                       {'Abssent - stable','Distant Present - stable','Presend - stable','Difference'},...
+                                       {'Absent - stable','Distant Present - stable','Presend - stable','Difference'},...
+                                       [-0.07,0.07]);  
+                                   
+        [~, ~, ~, sig_t_maxClus_Abs_var]    = sign_flip_AcrossTime_PS(Abs_var,10000,[],[100,0],true,0.05,false); 
+                                   
+        [sig_where] =  mk_clusterStats(Abs_var,...
+                                       sig_t_maxClus_Abs_var,...
+                                       true,false,size(Stable_var,1)-1,0.05,true,false,[9],'Individual Seqs',...
+                                       {'Absent - present'},...
                                        [-0.07,0.07]); 
     end
+      
+%         save(file_name,...
+%              'Distvary_BB_all','stable_BB_all','stable_BB_wrong_all','vary_BB_all','vary_BB_wrong_all',...
+%              'BB_tw_all','BB_wrong_tw_all','distances_seq',...
+%              'Corr_Trials',...
+%              'RTs',...
+%              'preds_present','preds_absent',...
+%              'preds_all_allSub',...
+%              '-v7.3')
+
 end
