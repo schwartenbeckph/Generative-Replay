@@ -1,0 +1,7 @@
+missing
+- s8 (day 1)
+- s10 (day 1)
+- s12 (day 3)
+- s13 (day 2)
+- s18 (day 3)
+- s20 (day 1)
